@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Descobrindo o sexo do Bebê da Júlia Lins Fuentes</title>
+	<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Pacifico&display=swap');
+
+		body {
+			background-image: linear-gradient(to right, rgb(235, 110, 162) , rgb(102, 186, 224));
+			color: #5E5E5E;
+			font-family: 'Pacifico';
+			font-size: 16px;
+			margin: 0;
+			padding: 0;
+		}
+
+		h1 {
+			color: #ffffff;
+			font-size: 36px;
+			margin: 30px 0;
+			text-align: center;
+            font-family: 'Comic Neue';
+            text-shadow: #000 2px 3px 2px;
+		}
+
+		.container {
+			background-color: #0c0c0c7e;
+			border-radius: 10px;
+			box-shadow: 5px 5px 5px #0a0a0ac7;
+			margin: 30px auto;
+			padding: 30px;
+			text-align: center;
+			width: 80%;
+		}
+
+		label {
+			display: block;
+			font-size: 20px;
+			margin: 20px 0 10px;
+			text-align: center;
+		}
+
+		input[type="radio"] {
+			display: none;
+		}
+
+		input[type="radio"] + .menino {
+			background-color: rgb(102, 186, 224);
+			border: 2px solid #201d1d;
+            color: #FFFFFF;
+            text-shadow: #000 2px 3px 2px;
+			border-radius: 5px;
+			cursor: pointer;
+			display: inline-block;
+			font-size: 20px;
+			margin: 10px;
+			padding: 10px;
+			width: 120px;
+			text-align: center;
+			transition: all 0.3s ease-in-out;
+		}
+
+        input[type="radio"] + .menina {
+			background-color: rgb(235, 110, 162);
+			border: 2px solid #201d1d;
+            color: #FFFFFF;
+            text-shadow: #000 2px 3px 2px;
+			border-radius: 5px;
+			cursor: pointer;
+			display: inline-block;
+			font-size: 20px;
+			margin: 10px;
+			padding: 10px;
+			width: 120px;
+			text-align: center;
+			transition: all 0.3s ease-in-out;
+		}
+
+
+		input[type="radio"]:checked + .menino {
+			background-color: rgb(154, 213, 240);
+			border-color: rgb(6, 166, 240);
+			color: #FFFFFF;
+            text-shadow: rgb(6, 166, 240) 2px 3px 2px;
+		}
+
+        input[type="radio"]:checked + .menina {
+			background-color: rgb(248, 173, 204);
+			border-color: rgb(211, 11, 94);
+			color: #FFFFFF;
+            text-shadow:rgb(90, 4, 40) 2px 3px 2px;
+		}
+
+		button {
+			background-image: linear-gradient(to right, rgb(102, 186, 224) , rgb(235, 110, 162));
+			border: 2px solid #201d1d;
+			border-radius: 5px;
+			color: #FFFFFF;
+            text-shadow: #000 2px 3px 2px;
+			cursor: pointer;
+			display: block;
+			font-size: 20px;
+			margin: 20px auto;
+			padding: 10px 30px;
+			transition: all 0.3s ease-in-out;
+            font-family: 'Comic Neue';
+		}
+
+		button:hover {
+			background-color: #FEB2B7;
+		}
+
+		.modal {
+			background-color: rgba(0, 0, 0, 0.8);
+            font-size: 50px;
+			display: none;
+			height: 100%;
+			left: 0;
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 999;
+		}
+
+		.modal-content {
+			background-color: #FFFFFF;
+			border-radius: 10px;
+			box-shadow: 5px 5px 5px #888888;
+			margin: 20% auto;
+			max-width: 80%;
+			padding: 30px;
+			text-align: center;
+		}
+
+		.close {
+			color: #FFFFFF;
+			cursor: pointer;
+			display: block;
+			font-size: 30px;
+			position: absolute;
+			right: 10px;
+			top: 	
+        }	
+            
+            
+     .close:hover {
+			color: #ff1111;
+		}
+	</style>
+</head>
+<body>
+	<h1>🤰🏽 Descobrindo o sexo do Bebê da Júlia Lins Fuentes 🤰🏽</h1>
+	<div class="container">
+		<form>
+			<label>
+				<input type="radio" name="resposta" value="sim" id="sim">
+				<label for="sim" class="menino">Menino 👦</label>
+			</label>
+			<label>
+				<input type="radio" name="resposta" value="nao" id="nao">
+				<label for="nao" class="menina">Menina 👧</label>
+			</label>
+			<button type="button" onclick="verificarResposta()">Enviar</button>
+		</form>
+	</div>
+	<div id="modal" class="modal">
+		<div class="modal-content">
+			<span class="close" onclick="fecharModal()">&times;</span>
+			<p id="mensagem"></p>
+		</div>
+	</div>
+	<script>
+		function verificarResposta() {
+			var resposta = document.querySelector('input[name="resposta"]:checked');
+			if (resposta) {
+				if (resposta.value === "sim") {
+					document.body.style.backgroundImage = "linear-gradient(to right, rgb(102, 186, 224) , rgb(102, 186, 224))";
+					document.getElementById("mensagem").innerHTML = "Você acertou! Meu Príncipe está a caminho! 👶👑";
+				} else if (resposta.value === "nao") {
+					document.body.style.backgroundImage = "linear-gradient(to right, rgb(102, 186, 224) , rgb(235, 110, 162))";
+					document.getElementById("mensagem").innerHTML = "Você ERROU! Não é uma princesa e sim um Príncipe! 👶👑";
+				}
+				document.getElementById("modal").style.display = "block";
+			} else {
+				alert("Por favor, selecione uma opção.");
+			}
+		}
+
+		function fecharModal() {
+			document.getElementById("modal").style.display = "none";
+		}
+	</script>
+</body>
+</html>
+
